@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:focusable="true"
+    android:id="@+id/container"
+android:focusableInTouchMode="true"
+tools:context=".TextActivity">
+
+
+
+<RelativeLayout
+    android:id="@+id/view"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/poemTitle"
+        android:enabled="false"
+        android:padding="5dp"
+            android:textSize="25sp"
+        android:textColor="@color/gray"
+        />
+
+
+        <EditText
+
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/userTitle"
+        android:padding="5dp"
+            android:background="@android:color/transparent"
+        android:textColor="@color/white"
+        />
+
+
+    <EditText
+        android:layout_below="@+id/poemTitle"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/poemWriter"
+        android:enabled="false"
+        android:text="윤동주"
+        android:padding="5dp"
+        android:textColor="@color/gray"
+        />
+
+
+    <EditText
+
+        android:layout_below="@+id/poemTitle"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/userWriter"
+        android:padding="5dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/white"
+        />
+
+
+
+
+    <EditText
+    android:padding="5dp"
+android:enabled="false"
+    android:layout_margin="20dp"
+android:layout_below="@+id/poemWriter"
+android:id="@+id/poemText"
+android:gravity="top|left"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:ems="10"
+android:textColor="@color/gray" />
+
+
+
+<EditText
+    android:layout_margin="20dp"
+    android:padding="5dp"
+android:layout_below="@+id/poemWriter"
+android:id="@+id/userText"
+android:gravity="top|left"
+android:background="@android:color/transparent"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:textColor="@color/white"
+android:ems="10"
+android:inputType="textMultiLine" />
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:text=""
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
